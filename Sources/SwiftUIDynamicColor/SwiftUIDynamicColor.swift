@@ -25,7 +25,7 @@ public struct SwiftUIDynamicColor: ShapeStyle {
     }
 }
 
-@freestanding(declaration, names: named(SwiftUIDynamicColor), arbitrary)
+@freestanding(declaration, names: arbitrary)
 public macro DynamicColor(_ name: StaticString, `defaultColor`: SwiftUI.Color, darkColor: SwiftUI.Color) = #externalMacro(module: "SwiftUIDynamicColorMacros", type: "DynamicColorMacro")
 
 
