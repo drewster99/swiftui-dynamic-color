@@ -38,8 +38,8 @@ public struct DynamicColorMacro: DeclarationMacro {
             // Must be within:
             // extension ShapeStyle where Self == SwiftUIDynamicColor {
             """
-            static public var \(raw: name): some ShapeStyle {
-                SwiftUIDynamicColor.SwiftUIDynamicColor(defaultColor: \(defaultColor), darkColor: \(darkColor))
+            static public var \(raw: name): SwiftUIDynamicColorShapeStyle {
+                SwiftUIDynamicColorShapeStyle(defaultColor: \(defaultColor), darkColor: \(darkColor))
             }
             """
         ]

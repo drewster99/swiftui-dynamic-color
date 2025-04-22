@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-extension ShapeStyle where Self == SwiftUIDynamicColor {
+extension ShapeStyle where Self == SwiftUIDynamicColorShapeStyle {
     #DynamicColor("barch", defaultColor: .blue, darkColor: .red)
 }
 

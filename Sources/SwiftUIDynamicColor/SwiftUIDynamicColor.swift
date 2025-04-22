@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-public struct SwiftUIDynamicColor: ShapeStyle {
+public struct SwiftUIDynamicColorShapeStyle: ShapeStyle {
     public let defaultColor: Color
     public let darkColor: Color
 
