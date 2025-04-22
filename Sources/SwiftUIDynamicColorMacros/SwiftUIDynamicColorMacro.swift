@@ -3,8 +3,6 @@ import SwiftSyntax
 import SwiftSyntaxBuilder
 import SwiftSyntaxMacros
 
-
-
 public struct DynamicColorMacro: DeclarationMacro {
     public static func expansion(of node: some SwiftSyntax.FreestandingMacroExpansionSyntax,
                                  in context: some SwiftSyntaxMacros.MacroExpansionContext) throws -> [SwiftSyntax.DeclSyntax] {
@@ -41,7 +39,7 @@ public struct DynamicColorMacro: DeclarationMacro {
             // extension ShapeStyle where Self == SwiftUIDynamicColor {
             """
             static public var \(raw: name): some ShapeStyle {
-                SwiftUIDynamicColor(defaultColor: \(defaultColor), darkColor: \(darkColor))
+                SwiftUIDynamicColor.SwiftUIDynamicColor(defaultColor: \(defaultColor), darkColor: \(darkColor))
             }
             """
         ]
